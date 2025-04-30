@@ -1,0 +1,101 @@
+% Author: Felix Plasser (2025)
+%
+% This is a simple template for generating a latex supporting information.
+% Modify as needed.
+% If you have improvements, please send as a merge requests.
+
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage{ucs}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+\renewcommand{\thefigure}{S\arabic{figure}}
+\renewcommand{\thetable}{S\arabic{table}}
+\renewcommand{\theequation}{S\arabic{equation}}
+\renewcommand{\thesection}{}
+\renewcommand{\thesubsection}{}
+
+\newcommand{\sititle}[1]{\title{Supporting Information\\~\\\emph{for}\\~\\ \textbf{#1}}}
+
+\begin{document}
+
+\sititle{Very important paper}
+\author{M. Mustermann, C. Musterfrau}
+
+\maketitle
+
+\vspace{2em}
+\tableofcontents
+\listoftables
+\listoffigures
+
+\newpage
+
+\section{S1: Mathematical background}
+\subsection{Note S1: Derivation of XXX}
+First we have to realise that
+%
+\begin{equation}
+1 + 1 = 2
+\end{equation}
+%
+and this will allow us to find that
+%
+\begin{equation}
+\iint \Psi(x,y)\sin(x)\mathrm{d}y \mathrm{d}x = -\frac{\pi}{2}
+\end{equation}
+%
+which then means that
+%
+\begin{equation}
+\bra{\Psi_I}\widehat{\mathrm{H}}\ket{\Psi_J} = \delta_{IJ}
+\end{equation}
+
+\subsection{Note S2: Derivation of YYY}
+
+\newpage
+
+\section{S2: Additional results on ...}
+
+\phantom{ } % spacer to make sure things stay in order
+
+\begin{table}[h!]
+\centering
+\caption{Important results on ....}
+
+\begin{tabular}{cc}
+\hline
+Header & Header\\
+\hline
+a & b\\
+\hline
+\end{tabular}
+\end{table}
+
+\phantom{ } % spacer to make sure things stay in order
+
+\begin{table}[h!]
+\centering
+\caption{Not so important results on ....}
+
+\begin{tabular}{cc}
+\hline
+Header & Header\\
+\hline
+c & d\\
+\hline
+\end{tabular}
+\end{table}
+
+\phantom{ } % spacer to make sure things stay in order
+
+\begin{figure}[h!]
+\caption{Interesting figure}
+%\includegraphics[scale=•]{•}
+\end{figure}
+
+\end{document}
